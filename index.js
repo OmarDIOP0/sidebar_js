@@ -1,9 +1,25 @@
-const sidebar = document.querySelector('.sidebar');
-const btn = document.querySelector('button');
-btn.addEventListener('click',()=>{
-    sidebar.classList.toggle('hide');
-    btn.classList.toggle('hideBtn');
+var tl = gsap.timeline({
+    defaults:{
+        opacity:0,
+        ease:'linear',
+        duration:1,
+    }
 })
+tl.fromTo('.sidebar',{width:0},{
+    opacity:1,
+    width:"30%",
+});
+tl.fromTo('.main-img',{x:0},{opacity:1});
+tl.fromTo('.content',{x:100},{opacity:1,x:0})
+
+
+
+// const sidebar = document.querySelector('.sidebar');
+// const btn = document.querySelector('button');
+// btn.addEventListener('click',()=>{
+//     sidebar.classList.toggle('hide');
+//     btn.classList.toggle('hideBtn');
+// })
 // gsap.set('.box',{
 //     opacity:1,
 //     background:'yellow',
@@ -31,14 +47,3 @@ btn.addEventListener('click',()=>{
 //     repeat:-1,
 //     yoyo:true,
 //    })
-var tl = gsap.timeline({
-    defaults:{
-        opacity:0,
-        ease:'linear',
-        duration:1,
-    }
-})
-tl.fromTo('.sidebar',{width:0},{
-    opacity:1,
-    width:"30%",
-})
