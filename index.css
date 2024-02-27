@@ -3,7 +3,67 @@
     margin:0;
     box-sizing:border-box;
 }
-body{
+nav{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:fixed;
+    z-index:99;
+    width:100%;
+    margin-top:20px;
+}
+nav ul{
+    display:flex;
+}
+nav ul li {
+    list-style:none;
+    margin-left:40px;
+    font-size:12px;
+    font-family:sans-sherif;
+}
+nav ul li a{
+    text-decoration:none;
+    color:#000000;
+}
+
+.main-img{
+    width:40%;
+    margin-top:3rem;
+    margin-left:6rem;
+}
+.logo-container h1{
+    font-family:sans-sherif;
+}
+.sidebar{
+    background:#d75157;
+    width:30%;
+    height:100vh;
+    position:fixed;
+    z-index:-1;
+}
+.content-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    font-family:'Roboto',sans-sherif;
+}
+.main-title{
+    transform:rotate(-90deg);
+    magin-top:10rem;
+    font-size:3rem;
+    font-family:"Kumar One Ontline",cursive;
+}
+.main-info{
+    transform:rotate(-90deg);
+    font-family:sans-sherif;
+    text-align:center;
+    width:200px;
+    margin-bottom:5rem;
+    margin-left:7rem;
+}
+/*body{
     background-color:#1b1b1b;
 }
 section.sidebar{
@@ -19,6 +79,9 @@ section.sidebar{
 .hide{
     transform:translateX(-240px);
 }
+.hideBtn{
+    transform:translateX(-80px);
+}
 ul li{
     list-style:none;
     margin-bottom:10px;
@@ -30,10 +93,12 @@ ul li a {
     font-family:sans-serif;
 }
 .center{
+    position:relative;
+    left:-170px;
     display:flex;
     justify-content:center;
     align-items:center;
-    height:100vh;
+    height:40vh;
 }
 .center button{
     padding:10px 20px;
@@ -43,3 +108,15 @@ ul li a {
     color:#fff;
     cursor:pointer;
 }
+section.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+     height:4vh; 
+}
+.box{
+    width:20px;
+    height:20px;
+    background-color:orange;
+    border-radius:100px;
+} */
